@@ -1,0 +1,35 @@
+﻿<Window x:Name="CameraWindow" x:Class="Macroscop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Macroscop"
+        mc:Ignorable="d"
+        Title="Macroscop Test" Height="600" Width="900" WindowStartupLocation="CenterScreen" SizeToContent="Height">
+    <Grid Margin="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition x:Name="ParamColumn" MaxWidth="200" MinWidth="200" Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="0">
+            <Image x:Name="CameraImage"/>
+        </Border>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="10,5,0,0" TextWrapping="Wrap" Text="Адрес сервера:" VerticalAlignment="Top" RenderTransformOrigin="0.44,4.625"/>
+        <TextBox x:Name="CameraHost" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Text="demo.macroscop.com"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="12,162,0,0" TextWrapping="Wrap" Text="Камера:" VerticalAlignment="Top" RenderTransformOrigin="0.467,0.313"/>
+        <ComboBox x:Name="CameraChannel" Grid.Column="1" HorizontalAlignment="Left" Margin="11,178,0,0" VerticalAlignment="Top" Width="179"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="11,49,0,0" TextWrapping="Wrap" Text="Порт:" VerticalAlignment="Top" RenderTransformOrigin="0.44,4.625"/>
+        <TextBox x:Name="CameraPort" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Text="8080"/>
+        <Button x:Name="btStart" Content="Старт" Grid.Column="1" HorizontalAlignment="Left" Margin="12,262,0,0" VerticalAlignment="Top" Width="75" Click="btStart_Click" IsDefault="True" ClickMode="Press"/>
+        <Button x:Name="btFinish" Content="Финиш" Grid.Column="1" HorizontalAlignment="Left" Margin="115,262,0,0" VerticalAlignment="Top" Width="75" Click="btFinish_Click" IsCancel="True"/>
+        <Button x:Name="btConfig" Content="Получить конфигурацию" Grid.Column="1" HorizontalAlignment="Left" Margin="11,137,0,0" VerticalAlignment="Top" Width="179" Click="btConfig_Click"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="12,93,0,0" TextWrapping="Wrap" Text="Логин:" VerticalAlignment="Top" RenderTransformOrigin="0.44,4.625"/>
+        <TextBox x:Name="CameraLogin" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="11,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Text="root"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="13,290,0,0" TextWrapping="Wrap" Text="Статус:" VerticalAlignment="Top" RenderTransformOrigin="0.44,4.625"/>
+        <TextBlock x:Name="CameraStatus" Grid.Column="1" HorizontalAlignment="Left" Margin="55,290,0,0" TextWrapping="Wrap" Text="-" VerticalAlignment="Top" RenderTransformOrigin="0.44,4.625" Width="137"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="13,311,0,0" TextWrapping="Wrap" Text="Кол-во кадров:" VerticalAlignment="Top" RenderTransformOrigin="0.44,4.625"/>
+        <TextBlock x:Name="CameraCount" Grid.Column="1" HorizontalAlignment="Left" Margin="101,311,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" RenderTransformOrigin="0.44,4.625" Width="91"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="12,205,0,0" TextWrapping="Wrap" Text="Разрешение камеры:" VerticalAlignment="Top" RenderTransformOrigin="0.467,0.313"/>
+        <ComboBox x:Name="CameraResolution" Grid.Column="1" HorizontalAlignment="Left" Margin="12,221,0,0" VerticalAlignment="Top" Width="180" SelectionChanged="CameraResolution_SelectionChanged"/>
+    </Grid>
+</Window>

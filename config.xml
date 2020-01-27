@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="03725ebf-52ab-48ff-a1bd-f6d457b184d2" SenderId="d9af8547-31ed-47cc-a9b5-14b66da29688" Revision="170" Timestamp="2020-01-24T08:50:16.1703844Z" XMLProtocolVersion="2" ServerVersion="2.8.45" ProductType="">
+  <Servers>
+    <ServerInfo Id="d9af8547-31ed-47cc-a9b5-14b66da29688" Name="Cервер 1" Url="demo.macroscop.com:8080" />
+  </Servers>
+  <Channels>
+    <ChannelInfo Id="e6f2848c-f361-44b9-bbec-1e54eae777c0" Name="Parking" Description="" DeviceInfo="Virtual Camera Macroscop Virtual Ip Camera" AttachedToServer="d9af8547-31ed-47cc-a9b5-14b66da29688" IsDisabled="false" IsSoundOn="false" IsArchivingEnabled="true" IsSoundArchivingEnabled="false" AllowedRealtime="true" AllowedArchive="true" IsPtzOn="false" IsTransmitSoundOn="false" ArchiveMode="MDandManual" ArchiveStreamType="Main">
+      <Streams>
+        <StreamInfo StreamType="Main" StreamFormat="H264" RotationMode="None" />
+      </Streams>
+    </ChannelInfo>
+    <ChannelInfo Id="6ea0cf2f-2bd6-4f14-aa12-46d643719727" Name="Corridor" Description="" DeviceInfo="Virtual Camera Macroscop Virtual Ip Camera" AttachedToServer="d9af8547-31ed-47cc-a9b5-14b66da29688" IsDisabled="false" IsSoundOn="false" IsArchivingEnabled="true" IsSoundArchivingEnabled="false" AllowedRealtime="true" AllowedArchive="true" IsPtzOn="false" IsTransmitSoundOn="false" ArchiveMode="MDandManual" ArchiveStreamType="Main">
+      <Streams>
+        <StreamInfo StreamType="Main" StreamFormat="H264" RotationMode="None" />
+      </Streams>
+    </ChannelInfo>
+    <ChannelInfo Id="2410f79c-8f7e-4cd4-8baf-f7be29869a7e" Name="Road" Description="" DeviceInfo="Virtual Camera Macroscop Virtual Ip Camera" AttachedToServer="d9af8547-31ed-47cc-a9b5-14b66da29688" IsDisabled="false" IsSoundOn="false" IsArchivingEnabled="true" IsSoundArchivingEnabled="true" AllowedRealtime="true" AllowedArchive="true" IsPtzOn="false" IsTransmitSoundOn="false" ArchiveMode="AlwaysOn" ArchiveStreamType="Main">
+      <Streams>
+        <StreamInfo StreamType="Main" StreamFormat="H264" RotationMode="None" />
+      </Streams>
+    </ChannelInfo>
+    <ChannelInfo Id="2016897c-8be5-4a80-b1a3-7f79a9ec729c" Name="Entrance" Description="" DeviceInfo="Virtual Camera Macroscop Virtual Ip Camera" AttachedToServer="d9af8547-31ed-47cc-a9b5-14b66da29688" IsDisabled="false" IsSoundOn="false" IsArchivingEnabled="true" IsSoundArchivingEnabled="false" AllowedRealtime="true" AllowedArchive="true" IsPtzOn="false" IsTransmitSoundOn="false" ArchiveMode="MDandManual" ArchiveStreamType="Main">
+      <Streams>
+        <StreamInfo StreamType="Main" StreamFormat="H264" RotationMode="None" />
+      </Streams>
+    </ChannelInfo>
+    <ChannelInfo Id="773bad89-c18a-4e7e-a70d-c2a37897a92d" Name="Parking in the office center" Description="" DeviceInfo="Virtual Camera Macroscop Virtual Ip Camera" AttachedToServer="d9af8547-31ed-47cc-a9b5-14b66da29688" IsDisabled="false" IsSoundOn="true" IsArchivingEnabled="true" IsSoundArchivingEnabled="true" AllowedRealtime="true" AllowedArchive="true" IsPtzOn="false" IsTransmitSoundOn="false" ArchiveMode="AlwaysOn" ArchiveStreamType="Main">
+      <Streams>
+        <StreamInfo StreamType="Main" StreamFormat="H264" RotationMode="None" />
+      </Streams>
+    </ChannelInfo>
+  </Channels>
+  <RootSecurityObject Id="452f6d68-0ceb-4a14-be2d-38718c5ab7d6">
+    <ChildSecurityObjects>
+      <SecObjectInfo Id="801e28a4-1711-4ab2-b7fd-a4d9687a471c" Name="Office">
+        <ChildSecurityObjects />
+        <ChildChannels>
+          <ChannelId>2016897c-8be5-4a80-b1a3-7f79a9ec729c</ChannelId>
+          <ChannelId>6ea0cf2f-2bd6-4f14-aa12-46d643719727</ChannelId>
+        </ChildChannels>
+      </SecObjectInfo>
+      <SecObjectInfo Id="7d57b96d-4e10-4784-a874-4ee290055880" Name="Street">
+        <ChildSecurityObjects />
+        <ChildChannels>
+          <ChannelId>2410f79c-8f7e-4cd4-8baf-f7be29869a7e</ChannelId>
+          <ChannelId>e6f2848c-f361-44b9-bbec-1e54eae777c0</ChannelId>
+          <ChannelId>773bad89-c18a-4e7e-a70d-c2a37897a92d</ChannelId>
+        </ChildChannels>
+      </SecObjectInfo>
+    </ChildSecurityObjects>
+    <ChildChannels />
+  </RootSecurityObject>
+  <UserGroup>
+    <GridTypesAllowed>
+      <GridTypes>GridType1</GridTypes>
+      <GridTypes>GridType2</GridTypes>
+      <GridTypes>GridType4</GridTypes>
+      <GridTypes>GridType1x4</GridTypes>
+      <GridTypes>GridType6</GridTypes>
+      <GridTypes>GridType3x2</GridTypes>
+      <GridTypes>GridType2X4</GridTypes>
+      <GridTypes>GridType7</GridTypes>
+      <GridTypes>GridType8</GridTypes>
+      <GridTypes>GridType4x2</GridTypes>
+      <GridTypes>GridType9</GridTypes>
+      <GridTypes>GridType10</GridTypes>
+      <GridTypes>GridType12</GridTypes>
+      <GridTypes>GridType13</GridTypes>
+      <GridTypes>GridType16</GridTypes>
+      <GridTypes>GridType17</GridTypes>
+      <GridTypes>GridType20</GridTypes>
+      <GridTypes>GridType24</GridTypes>
+      <GridTypes>GridType25</GridTypes>
+      <GridTypes>GridType30</GridTypes>
+      <GridTypes>GridType36</GridTypes>
+      <GridTypes>GridType64</GridTypes>
+      <GridTypes>GridType100</GridTypes>
+      <GridTypes>GridType110</GridTypes>
+      <GridTypes>GridType12X11</GridTypes>
+      <GridTypes>GridType256</GridTypes>
+      <GridTypes>GridType262</GridTypes>
+    </GridTypesAllowed>
+    <Id>c5603fb1-2bd6-4939-9ac7-fe8228878f59</Id>
+    <Name>Операторы</Name>
+    <CanConfigure>false</CanConfigure>
+    <CanConfigureWorkplace>false</CanConfigureWorkplace>
+    <CanShutdown>true</CanShutdown>
+    <CanChangeChannelMode>true</CanChangeChannelMode>
+    <CanManageRec>true</CanManageRec>
+    <CanAccessExpertMode>true</CanAccessExpertMode>
+    <CanPTZ>false</CanPTZ>
+    <PtzPriority>Minimal</PtzPriority>
+    <CanReceiveSound>true</CanReceiveSound>
+    <CanTransmitSound>true</CanTransmitSound>
+    <CanAccessNewCamera>true</CanAccessNewCamera>
+    <CanAccessReports>true</CanAccessReports>
+    <CanGetTranscodedVideoFromMobileServer>true</CanGetTranscodedVideoFromMobileServer>
+    <CanAccessEditingAnalystPluginsInClient>false</CanAccessEditingAnalystPluginsInClient>
+    <CanAccessVideoViaWeb>true</CanAccessVideoViaWeb>
+    <CanAccessVideoViaSmartTV>true</CanAccessVideoViaSmartTV>
+    <CanExportVideoToAvi>true</CanExportVideoToAvi>
+    <CanUseArchiveExport>true</CanUseArchiveExport>
+    <CanReceiveMainStream>true</CanReceiveMainStream>
+    <IsAllForbidden>false</IsAllForbidden>
+    <CanAccessUnifiedLog>true</CanAccessUnifiedLog>
+    <CanAccessArchiveMarks>true</CanAccessArchiveMarks>
+    <CanAccessSearch>true</CanAccessSearch>
+    <CanAccessToAllUsersInUnifiedLog>true</CanAccessToAllUsersInUnifiedLog>
+    <CanReceiveMobilePush>true</CanReceiveMobilePush>
+    <MessengerCanSendMessages>false</MessengerCanSendMessages>
+    <MessengerCanReceiveMessages>false</MessengerCanReceiveMessages>
+    <CanConfigureVideowall>false</CanConfigureVideowall>
+    <CanBrowsingVideowall>false</CanBrowsingVideowall>
+    <CanAccessPlans>true</CanAccessPlans>
+    <CanChangePassword>false</CanChangePassword>
+  </UserGroup>
+  <MobileServerInfo IsEnabled="true" IsProxyEnabled="true" IsMobilePushEnabled="false" Port="8089" UsePFrames="false" FpsLimit="0" LowResolution="640 x 480" MiddleResolution="800 x 480" HighResolution="1280 x 720">
+    <Resolutions>
+      <ResolutionInfo Width="1280" Height="720" IsEnabled="true" FpsLimit="0" UsePFrames="true" Type="High" />
+      <ResolutionInfo Width="800" Height="480" IsEnabled="true" FpsLimit="0" UsePFrames="true" Type="Middle" />
+      <ResolutionInfo Width="640" Height="480" IsEnabled="true" FpsLimit="0" UsePFrames="true" Type="Low" />
+    </Resolutions>
+  </MobileServerInfo>
+  <RtspServerInfo IsEnabled="true" TcpPort="554" IsMjpegEnabled="false" />
+  <MobileDevicesCapabilities>
+    <Archive>true</Archive>
+    <Ptz>true</Ptz>
+    <Hls>true</Hls>
+    <AppleMobilePush>true</AppleMobilePush>
+    <AndroidMobilePush>true</AndroidMobilePush>
+    <Profiles>true</Profiles>
+  </MobileDevicesCapabilities>
+</Configuration>

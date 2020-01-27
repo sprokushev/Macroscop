@@ -239,9 +239,9 @@ namespace Macroscop
             {
                 string url = $"http://{CameraHost.Text}:{CameraPort.Text}/configex?login={CameraLogin.Text}";
                 XmlReader reader = XmlReader.Create(url);
-                var elements = XElement.Load(reader).Descendants("ChannelInfo");
 
                 // Заполним список камер, выберем первую
+                var elements = XElement.Load(reader).Descendants("ChannelInfo");
                 foreach (var item in elements)
                 {
                     Cameras.Add(new Camera() { Id = item.Attribute("Id").Value, Name = item.Attribute("Name").Value });
@@ -281,6 +281,12 @@ namespace Macroscop
                 CameraWindow.Top = (System.Windows.SystemParameters.PrimaryScreenHeight - CameraWindow.Height) / 2;
             }
             if (statusReady) btStart_Click(sender, e);
+        }
+
+        private void CameraChannel_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (statusReady) btStart_Click(sender, e);
+
         }
     }
 }

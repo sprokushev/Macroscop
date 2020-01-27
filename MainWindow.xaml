@@ -17,7 +17,7 @@
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="10,5,0,0" TextWrapping="Wrap" Text="Адрес сервера:" VerticalAlignment="Top" RenderTransformOrigin="0.44,4.625"/>
         <TextBox x:Name="CameraHost" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Text="demo.macroscop.com"/>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="12,162,0,0" TextWrapping="Wrap" Text="Камера:" VerticalAlignment="Top" RenderTransformOrigin="0.467,0.313"/>
-        <ComboBox x:Name="CameraChannel" Grid.Column="1" HorizontalAlignment="Left" Margin="11,178,0,0" VerticalAlignment="Top" Width="179"/>
+        <ComboBox x:Name="CameraChannel" Grid.Column="1" HorizontalAlignment="Left" Margin="11,178,0,0" VerticalAlignment="Top" Width="179" SelectionChanged="CameraChannel_SelectionChanged"/>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="11,49,0,0" TextWrapping="Wrap" Text="Порт:" VerticalAlignment="Top" RenderTransformOrigin="0.44,4.625"/>
         <TextBox x:Name="CameraPort" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Text="8080"/>
         <Button x:Name="btStart" Content="Старт" Grid.Column="1" HorizontalAlignment="Left" Margin="12,262,0,0" VerticalAlignment="Top" Width="75" Click="btStart_Click" IsDefault="True" ClickMode="Press"/>
